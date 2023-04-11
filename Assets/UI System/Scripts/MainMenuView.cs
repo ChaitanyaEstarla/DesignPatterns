@@ -11,7 +11,7 @@ namespace UI
         {
             startButton.onClick.AddListener(() => ViewManager.Show<SettingsView>());
         }
-        
+
         private void OnDestroy()
         {
             startButton.onClick.RemoveAllListeners();
