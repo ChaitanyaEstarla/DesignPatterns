@@ -16,12 +16,26 @@ namespace UI
 
         private void Awake()
         {
-            if (Instance != null && Instance != this)
+            if (Instance == null)
             {
-                Destroy(this);
+                Instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
                 return;
             }
-            Instance = this;
+        }
+
+        public void UpdateStartView(View newView)
+        {
+            startingView = newView;
+        }
+
+        public void LoadInitialView()
+        {
+            if (startingView != null)
+                Show(startingView, true);
         }
 
         private void Start()
@@ -31,9 +45,8 @@ namespace UI
                 view.Init();
                 view.Hide();
             }
-            
-            if(startingView != null)
-                Show(startingView, true);
+
+            LoadInitialView();
         }
 
         public static T GetView<T>() where T : View
@@ -43,7 +56,7 @@ namespace UI
                 if (t is T view)
                     return view;
             }
-
+             
             return null;
         }
 
