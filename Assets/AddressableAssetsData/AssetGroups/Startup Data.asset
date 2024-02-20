@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Startup Data
+  m_EditorClassIdentifier: 
+  m_GroupName: Startup Data
+  m_Data:
+    m_SerializedData: []
+  m_GUID: df8dbe31087485a4dac3a48df141961b
+  m_SerializeEntries:
+  - m_GUID: 940f4993eb6f6504488918c26d5aec08
+    m_Address: New SFX Event
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Blaze
+  - m_GUID: 93cb081a1a08a2e4aa8d3b3a1115233d
+    m_Address: Low Poly Environment
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Environment
+  - m_GUID: 7941847cbaa79c54c98c22699adc3dc9
+    m_Address: DarkUI
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5feeb569f61e44c4fb2553f04caa08bd
+    m_Address: Assets/Dark UI
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a7c7344def3dd8244847944c401c653a
+    m_Address: Cube1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cubes
+  - m_GUID: bd619edf9fd82aa4596a8ff25f87d36c
+    m_Address: Cube1 1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cubes
+  - m_GUID: cd0cbe9df516f504483671893daa586b
+    m_Address: Cube1 2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cubes
+  - m_GUID: 30fd39babf86f9c438391c6d14995369
+    m_Address: Cube1 3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cubes
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 8c12096e9fd6fc7468acd6bce73862b5, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 07ecc5d6e9747054f84e661a88a6dda2, type: 2}
+    - {fileID: 11400000, guid: 7457bd605335c4546a9541d4139fbe17, type: 2}
