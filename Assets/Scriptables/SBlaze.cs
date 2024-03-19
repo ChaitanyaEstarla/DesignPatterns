@@ -8,7 +8,7 @@ public class SBlaze : SerializedScriptableObject
     [SerializeField] protected string[] otherMembers;
 
     [Button("Log Other Members")]
-    private void PrintOtherMemberNames()
+    private void PrintOtherMemberNames()  
     {
         foreach (var name in otherMembers)
         {

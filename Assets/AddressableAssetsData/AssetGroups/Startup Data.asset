@@ -22,11 +22,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Blaze
-  - m_GUID: 93cb081a1a08a2e4aa8d3b3a1115233d
-    m_Address: Low Poly Environment
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Environment
   - m_GUID: 7941847cbaa79c54c98c22699adc3dc9
     m_Address: DarkUI
     m_ReadOnly: 0

@@ -1,74 +1,77 @@
 using UnityEngine;
 
-public class Delegates : MonoBehaviour
+namespace Delegates_and_Events.Scripts
 {
-    delegate void PointerToMath(int num1, int num2);
-
-    private PointerToMath _mathFunctions;
-
-    #region Untiy Events
-
-    private void OnEnable()
+    public class Delegates : MonoBehaviour
     {
-        _mathFunctions += Add;
-        _mathFunctions += Sub;
-        _mathFunctions += Mul;
-        _mathFunctions += Div;
-    }
+        delegate void PointerToMath(int num1, int num2);
 
-    private void Start()
-    {
-        _mathFunctions += Add;
-        _mathFunctions += Sub;
-        _mathFunctions += Mul;
-        _mathFunctions += Div;
-    }
+        private PointerToMath _mathFunctions;
 
-    private void Update()
-    {
-        if (Input.GetKeyUp(KeyCode.A))
+        #region Untiy Events
+
+        private void OnEnable()
         {
-            _mathFunctions(5, 2);
+            _mathFunctions += Add;
+            _mathFunctions += Sub;
+            _mathFunctions += Mul;
+            _mathFunctions += Div;
         }
-    }
+
+        private void Start()
+        {
+            _mathFunctions += Add;
+            _mathFunctions += Sub;
+            _mathFunctions += Mul;
+            _mathFunctions += Div;
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyUp(KeyCode.A))
+            {
+                _mathFunctions(5, 2);
+            }
+        }
     
-    private void OnDisable()
-    {
-        _mathFunctions -= Add;
-        _mathFunctions -= Sub;
-        _mathFunctions -= Mul;
-        _mathFunctions -= Div;
-    }
+        private void OnDisable()
+        {
+            _mathFunctions -= Add;
+            _mathFunctions -= Sub;
+            _mathFunctions -= Mul;
+            _mathFunctions -= Div;
+        }
     
-    private void OnDestroy()
-    {
-        _mathFunctions -= Add;
-        _mathFunctions -= Sub;
-        _mathFunctions -= Mul;
-        _mathFunctions -= Div;
-    }
+        private void OnDestroy()
+        {
+            _mathFunctions -= Add;
+            _mathFunctions -= Sub;
+            _mathFunctions -= Mul;
+            _mathFunctions -= Div;
+        }
 
-    #endregion
+        #endregion
 
-    #region Member Functions
+        #region Member Functions
 
-    private void Add(int a, int b)
-    {
-        Debug.Log(a+b);
-    }
+        private void Add(int a, int b)
+        {
+            Debug.Log(a+b);
+        }
     
-    private void Sub(int a, int b)
-    {
-        Debug.Log(a-b);
-    }
-    private void Mul(int a, int b)
-    {
-        Debug.Log(a*b);
-    }
-    private void Div(int a, int b)
-    {
-        Debug.Log(a/b);
-    }
+        private void Sub(int a, int b)
+        {
+            Debug.Log(a-b);
+        }
+        private void Mul(int a, int b)
+        {
+            Debug.Log(a*b);
+        }
+        private void Div(int a, int b)
+        {
+            Debug.Log(a/b);
+        }
 
-    #endregion
+        #endregion
+    }
 }
