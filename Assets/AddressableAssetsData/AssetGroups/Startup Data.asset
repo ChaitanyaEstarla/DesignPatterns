@@ -22,34 +22,41 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Blaze
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7941847cbaa79c54c98c22699adc3dc9
     m_Address: DarkUI
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5feeb569f61e44c4fb2553f04caa08bd
     m_Address: Assets/Dark UI
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a7c7344def3dd8244847944c401c653a
     m_Address: Cube1
     m_ReadOnly: 0
     m_SerializedLabels:
     - Cubes
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bd619edf9fd82aa4596a8ff25f87d36c
     m_Address: Cube1 1
     m_ReadOnly: 0
     m_SerializedLabels:
     - Cubes
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cd0cbe9df516f504483671893daa586b
     m_Address: Cube1 2
     m_ReadOnly: 0
     m_SerializedLabels:
     - Cubes
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 30fd39babf86f9c438391c6d14995369
     m_Address: Cube1 3
     m_ReadOnly: 0
     m_SerializedLabels:
     - Cubes
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 8c12096e9fd6fc7468acd6bce73862b5, type: 2}
   m_SchemaSet:
