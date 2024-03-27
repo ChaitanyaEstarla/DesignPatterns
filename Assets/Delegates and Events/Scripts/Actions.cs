@@ -10,7 +10,7 @@ namespace Delegates_and_Events.Scripts
         private Image _mImage;
         private UnityAction _mMyFirstAction;
         //This is the number that the script updates
-        private float _mMyNumber; 
+        private float _mMyNumber;
     
         private void Start()
         {

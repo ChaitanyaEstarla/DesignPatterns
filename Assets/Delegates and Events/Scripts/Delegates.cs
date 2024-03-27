@@ -6,9 +6,9 @@ namespace Delegates_and_Events.Scripts
 {
     public class Delegates : MonoBehaviour
     {
-        private delegate void PointerToMath(int num1, int num2);
-        private PointerToMath _mathFunctions;
-        private event PointerToMath MathCalcEvents;
+        public delegate void PointerToMath(int num1, int num2);
+        public PointerToMath _mathFunctions;
+        public event PointerToMath MathCalcEvents;
 
         #region Untiy Events
 
